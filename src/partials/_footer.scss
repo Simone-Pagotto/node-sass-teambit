@@ -1,0 +1,13 @@
+footer {
+    @include flex-between;
+    @include desktop-margin;
+    .logo{
+        @include flex-start;
+    }
+    ul{
+       list-style: none;     
+    }
+    .lists{
+        @include flex-between;
+    }
+}
