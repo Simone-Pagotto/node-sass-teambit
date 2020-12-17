@@ -52,3 +52,12 @@
 
     }
 }
+
+.experience{
+    .text{
+        @include flex-column;
+        @include desktop-margin;
+        align-items: center;
+        padding: 0 20%;
+    }
+}
