@@ -63,7 +63,6 @@
 .process,
 .experience {
   background-color: #FFE7D2;
-  height: 200px;
 }
 
 .mixed {
@@ -71,5 +70,31 @@
   flex-direction: column;
   width: 1366px;
   margin: 0 auto;
+}
+
+.mixed .title {
+  color: #58402C;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.mixed .trio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mixed .trio .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.mixed .trio .card .text {
+  color: #58402C;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.mixed hr {
+  color: #58402C;
 }
 
