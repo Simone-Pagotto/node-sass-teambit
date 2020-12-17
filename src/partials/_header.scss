@@ -1,4 +1,40 @@
 .top-bar {
     @include flex-between;
+    @include desktop-margin;
     align-items: center;
+    border-bottom: 1px solid $primary-color;
 }
+
+.navbar {
+    @include flex-between;
+    list-style: none;
+}
+
+.hero {
+    @include flex-between;
+    @include desktop-margin;
+
+    .text {
+        width: 50%;
+        height: 100%;
+        .title{
+            @include hero-title;
+        }
+        .subtitle{
+            @include hero-primary-text;
+        }
+        .buttons-box{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .info{
+            @include hero-secondary-text;
+        }
+    }
+
+    img {
+        width: 50%;
+        height: 100%;
+    }
+}
+

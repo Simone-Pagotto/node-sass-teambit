@@ -1,0 +1,9 @@
+.process, .experience {
+    background-color: $secondary-color;
+    height: 200px;
+}
+
+.mixed {
+    @include flex-column;
+    @include desktop-margin;
+}
