@@ -25,44 +25,55 @@
   justify-content: space-between;
   width: 1366px;
   margin: 0 auto;
+  /* img {
+      width: 50%;
+      height: 100%;
+  } */
 }
 
-.hero .text {
-  width: 50%;
-  height: 100%;
-}
-
-.hero .text .title {
-  color: #58402C;
-  font-size: 3rem;
-  font-weight: 800;
-}
-
-.hero .text .subtitle {
-  color: #58402C;
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-.hero .text .buttons-box {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.hero .text .info {
-  color: #58402C;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
+.hero .text,
 .hero img {
   width: 50%;
   height: 100%;
 }
 
+.hero .text .title,
+.hero img .title {
+  color: #58402C;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero .text .subtitle,
+.hero img .subtitle {
+  color: #58402C;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.hero .text .buttons-box,
+.hero img .buttons-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero .text .info,
+.hero img .info {
+  color: #58402C;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .process,
 .experience {
   background-color: #FFE7D2;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  width: 1366px;
+  margin: 0 auto;
 }
 
 .mixed {
@@ -96,5 +107,43 @@
 
 .mixed hr {
   color: #58402C;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.row img {
+  width: 50%;
+  height: 100%;
+}
+
+.row [class*=text-] {
+  width: 25%;
+}
+
+.row [class*=text-] .title {
+  color: #58402C;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.row [class*=text-] .subtitle {
+  color: #58402C;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.row [class*=text-] .link {
+  color: #2C4792;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.row .text-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 

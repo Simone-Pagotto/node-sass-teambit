@@ -2,6 +2,11 @@
     background-color: $secondary-color;
 }
 
+.feedback {
+    @include flex-column;
+    @include desktop-margin;
+}
+
 .mixed {
     @include flex-column;
     @include desktop-margin;
@@ -19,5 +24,31 @@
     }
     hr{
         color:$primary-color;
+    }
+}
+
+.row {
+    @include flex-start;
+    img {
+        @include w-50;
+    }
+    [class*="text-"]{
+        width:25%;
+        .title{
+            @include section-title;
+        }
+        .subtitle{
+            @include section-primary-text;
+        }
+        .link {
+            @include link-text;
+        }
+    }
+    .text-right{
+        @include column-flex-start;
+        
+    }
+    .text-left{
+
     }
 }

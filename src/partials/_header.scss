@@ -14,9 +14,8 @@
     @include flex-between;
     @include desktop-margin;
 
-    .text {
-        width: 50%;
-        height: 100%;
+    .text, img {
+        @include w-50;
         .title{
             @include hero-title;
         }
@@ -24,17 +23,16 @@
             @include hero-primary-text;
         }
         .buttons-box{
-            display: flex;
-            justify-content: flex-start;
+            @include flex-start;
         }
         .info{
             @include hero-secondary-text;
         }
     }
 
-    img {
+    /* img {
         width: 50%;
         height: 100%;
-    }
+    } */
 }
 
