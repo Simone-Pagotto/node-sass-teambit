@@ -1,0 +1,4 @@
+.top-bar {
+    @include flex-between;
+    align-items: center;
+}

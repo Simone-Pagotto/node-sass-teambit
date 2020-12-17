@@ -1,0 +1,15 @@
+$primary-color : #58402C;
+$secondary-color:#FFE7D2;
+$link-blue: #2C4792;
+
+$font-stack: 'Roboto', sans-serif;
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
