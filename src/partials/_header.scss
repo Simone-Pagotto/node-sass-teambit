@@ -112,6 +112,9 @@
     .hero{
         @include variables.flex-column;
         align-items: center;
+        .text, img{
+            width:100%;
+        }
     }
 }
 

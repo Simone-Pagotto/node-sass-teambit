@@ -188,6 +188,8 @@
             width:100%;
         }
         .text{
+            @include variables.flex-column;
+            align-items: center;
             width:100%;
         }
     }
@@ -201,5 +203,41 @@
 }
 
 @media screen and (max-width: 639px){
-    
+    .feedback, .mixed{
+        @include variables.mobile-margin;
+        .title:nth-of-type(2){
+            padding:50px 20px 0 20px;
+            line-height: 30px;
+        }
+    }
+
+    .mixed{
+        .trio{
+            @include variables.flex-column;
+            align-items: center;
+            p{
+              margin-bottom: 40px;  
+            }
+            
+        }
+    }
+
+    .row{
+        @include variables.flex-column;
+        & > img{
+            width:100%;
+        }
+        .text{
+            @include variables.flex-column;
+            align-items: center;
+            width:100%;
+        }
+    }
+
+    .experience{
+        .text{
+            @include variables.mobile-margin;
+            padding: 0 2%;
+        }
+    }
 }
