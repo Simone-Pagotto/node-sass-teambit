@@ -1,6 +1,6 @@
 .process, .experience {
     background-color: $secondary-color;
-   
+    padding-top: 50px;
 }
 
 .feedback {
@@ -11,20 +11,48 @@
 .mixed {
     @include flex-column;
     @include desktop-margin;
+    align-items: center;
+    text-align: center;
     .title{
         @include section-title;
+        &:nth-of-type(2){
+            padding:50px 250px 0 250px;
+            line-height: 30px;
+        }
+        margin-bottom: 50px;;
     }
     .trio {
+        width:100%;
         @include flex-between;
+        align-items: baseline;
         .card{
             @include flex-column;
+            align-items: center;
             .text{
                 @include section-secondary-text;
+                margin-top: 10px;
+            }
+            img{
+                &:nth-of-type(1){
+                    width:150px;
+                }
+                
+
+            }
+            #cat {
+                width:60px;
             }
         }
     }
+    .rabbit{
+        width:20%;
+        margin: 50px ;
+    }
     hr{
-        color:$primary-color;
+        background-color:$primary-color;
+        width:100%;
+        height: 1px;
+        border: none;
     }
 }
 

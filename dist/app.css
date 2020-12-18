@@ -126,6 +126,7 @@
 .process,
 .experience {
   background-color: #FFE7D2;
+  padding-top: 50px;
 }
 
 .feedback {
@@ -140,32 +141,60 @@
   flex-direction: column;
   width: 1366px;
   margin: 0 auto;
+  align-items: center;
+  text-align: center;
 }
 
 .mixed .title {
   color: #58402C;
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.mixed .title:nth-of-type(2) {
+  padding: 50px 250px 0 250px;
+  line-height: 30px;
 }
 
 .mixed .trio {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .mixed .trio .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .mixed .trio .card .text {
   color: #58402C;
   font-size: 0.8rem;
   font-weight: 400;
+  margin-top: 10px;
+}
+
+.mixed .trio .card img:nth-of-type(1) {
+  width: 150px;
+}
+
+.mixed .trio .card #cat {
+  width: 60px;
+}
+
+.mixed .rabbit {
+  width: 20%;
+  margin: 50px;
 }
 
 .mixed hr {
-  color: #58402C;
+  background-color: #58402C;
+  width: 100%;
+  height: 1px;
+  border: none;
 }
 
 .row {
@@ -185,7 +214,7 @@
 .row [class*=text-] .title {
   color: #58402C;
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .row [class*=text-] .subtitle {
