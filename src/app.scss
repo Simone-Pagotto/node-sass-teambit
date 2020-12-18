@@ -1,5 +1,4 @@
-@import "partials/_variables.scss";
-@import "partials/_common.scss";
-@import "partials/_header.scss";
-@import "partials/_main.scss";
-@import "partials/_footer.scss";
+@use "partials/_common.scss";
+@use "partials/_header.scss";
+@use "partials/_main.scss";
+@use "partials/_footer.scss";

@@ -1,26 +1,28 @@
+@use "_variables.scss";
+
 .top-bar {
-    @include flex-between;
-    @include desktop-margin;
+    @include variables.flex-between;
+    @include variables.desktop-margin;
     align-items: center;
-    border-bottom: 1px solid $primary-color;
+    border-bottom: 1px solid variables.$primary-color;
     height: 60px;
     .logo{
         width:125px;
     }
     .navbar {
-        @include flex-between;
-        @include navbar-text;
+        @include variables.flex-between;
+        @include variables.navbar-text;
         align-items: center;
         list-style: none;
         li{
             margin:0 1rem;
             button{
-                @include flex-between;
+                @include variables.flex-between;
                 align-items: center;
-                color: $link-blue;
+                color: variables.$link-blue;
                 font-size: 1rem;
                 font-weight: 600;
-                border: 1px solid $link-blue;
+                border: 1px solid variables.$link-blue;
                 border-radius: 3px;
                 padding : 10px;
                 background-color: white;
@@ -36,35 +38,35 @@
 
 
 .hero {
-    @include flex-between;
-    @include desktop-margin;
+    @include variables.flex-between;
+    @include variables.desktop-margin;
     margin-top: 50px;
     margin-bottom: 50px;
 
     .text, img {
-        @include w-50;
+        @include variables.w-50;
         .title{
-            @include hero-title;
+            @include variables.hero-title;
             margin-bottom: 10px;
         }
         .subtitle{
-            @include hero-primary-text;
+            @include variables.hero-primary-text;
             margin-bottom: 35px;
         }
         .buttons-box{
-            @include flex-start;
+            @include variables.flex-start;
             align-items: center;
             margin-bottom: 10px;
             button{
-                @include flex-between;
+                @include variables.flex-between;
                 align-items: center;
                 color: white ;
                 font-size: 1rem;
                 font-weight: 600;
-                border: 1px solid $link-blue;
+                border: 1px solid variables.$link-blue;
                 border-radius: 3px;
                 padding : 5px;
-                background-color:$link-blue;
+                background-color:variables.$link-blue;
                 img{
                     width: 1.3rem;
                     margin-right: 5px;
@@ -75,13 +77,9 @@
             }
         }
         .info{
-            @include hero-secondary-text;
+            @include variables.hero-secondary-text;
         }
     }
 
-    /* img {
-        width: 50%;
-        height: 100%;
-    } */
 }
 

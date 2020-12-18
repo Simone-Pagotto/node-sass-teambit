@@ -1,10 +1,12 @@
+@use "_variables.scss";
+
 footer {
-    @include flex-between;
-    @include desktop-margin;
+    @include variables.flex-between;
+    @include variables.desktop-margin;
     margin-top: 50px;
-    border-bottom: 1px solid $primary-color;
+    border-bottom: 1px solid variables.$primary-color;
     .logo{
-        @include flex-start;
+        @include variables.flex-start;
         align-items: flex-start;
         width:25%;
         img{
@@ -16,13 +18,13 @@ footer {
         }
     }
     span {
-        @include footer-link;
+        @include variables.footer-link;
     }
     ul{
        list-style: none;     
     }
     .lists{
-        @include flex-between;
+        @include variables.flex-between;
         width:60%;
         li{
             width:20%;
@@ -32,14 +34,14 @@ footer {
         }
         .list{
             li{
-                @include footer-secondary-text;
+                @include variables.footer-secondary-text;
                 margin-bottom: 10px;
                 width:100%;
             }
         }
     }
     p{
-        @include footer-primary-text;
+        @include variables.footer-primary-text;
     }
 
 }
