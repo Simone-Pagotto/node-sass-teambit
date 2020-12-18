@@ -4,6 +4,9 @@
     align-items: center;
     border-bottom: 1px solid $primary-color;
     height: 60px;
+    .logo{
+        width:125px;
+    }
     .navbar {
         @include flex-between;
         @include navbar-text;

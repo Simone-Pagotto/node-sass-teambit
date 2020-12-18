@@ -1,6 +1,10 @@
-$primary-color : #58402C;
+/* $primary-color : #58402C;
 $secondary-color:#FFE7D2;
-$link-blue: #2C4792;
+$link-blue: #2C4792; */
+$primary-color : #7f14d4;
+$secondary-color:  #0414b3;
+$link-blue: #0e14ee;
+$third-color: #3e14e9;
 
 $font-stack: 'Roboto', sans-serif;
 
@@ -22,6 +26,11 @@ $font-stack: 'Roboto', sans-serif;
 @mixin flex-start {
     display: flex;
     justify-content: flex-start;
+}
+
+@mixin flex-end {
+    display: flex;
+    justify-content: flex-end;
 }
 
 @mixin column-flex-start {
@@ -61,19 +70,19 @@ $font-stack: 'Roboto', sans-serif;
 
 @mixin link-text{
     color:$link-blue;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 @mixin section-title{
     color:$primary-color;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 
 @mixin section-primary-text{
     color:$primary-color;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
