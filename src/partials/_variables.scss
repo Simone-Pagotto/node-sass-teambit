@@ -35,6 +35,13 @@ $font-stack: 'Roboto', sans-serif;
     margin: 0 auto;
 }
 
+@mixin navbar-text{
+    color: $primary-color;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 @mixin hero-title {
     color: $primary-color;
     font-size: 3rem;
@@ -75,4 +82,22 @@ $font-stack: 'Roboto', sans-serif;
     color:$primary-color;
     font-size: 0.8rem;
     font-weight: 400;
+}
+
+@mixin footer-primary-text{
+    color: $primary-color;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@mixin footer-secondary-text{
+    color: $primary-color;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@mixin footer-link{
+    color: $link-blue;
+    font-size: 1rem;
+    font-weight: 600;
 }
