@@ -44,18 +44,18 @@ $font-stack: 'Roboto', sans-serif;
 @mixin hero-title {
     color: $primary-color;
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 @mixin hero-primary-text {
     color: $primary-color;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
 @mixin hero-secondary-text {
     color: $primary-color;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
 }
 
