@@ -1,12 +1,13 @@
-/* $primary-color : #58402C;
-$secondary-color:#FFE7D2;
-$link-blue: #2C4792; */
 $primary-color : #7f14d4;
 $secondary-color:  #0414b3;
 $link-blue: #0e14ee;
 $third-color: #3e14e9;
 
 $font-stack: 'Roboto', sans-serif;
+
+$layout-breakpoint-mobile: 640px;
+$layout-breakpoint-tablet: 1024px;
+$layout-breakpoint-desktop: 1366px;
 
 @mixin w-50{
     width:50%;
@@ -40,7 +41,17 @@ $font-stack: 'Roboto', sans-serif;
 }
 
 @mixin desktop-margin {
-    width: 1366px;
+    width: $layout-breakpoint-desktop;
+    margin: 0 auto;
+}
+
+@mixin tablet-margin {
+    width: $layout-breakpoint-tablet;
+    margin: 0 auto;
+}
+
+@mixin mobile-margin {
+    width: $layout-breakpoint-mobile;
     margin: 0 auto;
 }
 
@@ -109,3 +120,4 @@ $font-stack: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 600;
 }
+

@@ -45,3 +45,19 @@ footer {
     }
 
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+    footer{
+        @include variables.tablet-margin
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px){
+     footer{
+        @include variables.mobile-margin
+    }
+}
+
+@media screen and (max-width: 639px){
+    
+}
